@@ -32,13 +32,31 @@ Salve a sua resposta em duas variáveis do tipo string como abaixo:
 
     COMP_VS_INTERP_Q1 = """
     
-    Minha resposta aqui! 
-
+    Em suma, a grande diferença está na forma de execução. Enquanto um compilador analisa todo
+    o código a fim de traduzi-lo de uma vez (muitas vezes, o resultado é um arquivo executável
+    ou uma biblioteca), o interpretador faz esse trabalho de conversão aos poucos, sempre que 
+    uma declaração ou função é executada, por exemplo.
+    
+    Uma das grandes vantagens dos compiladores é sua velocidade de execução, muito em função
+    de traduzir todo o código de uma vez. Não precisar fazer a conversão toda vez que o sistema
+    é executado dá uma eficiência muito maior do que um interpretador.
+    
+    Uma compilação costuma dar resultados mais confiáveis graças às suas diversas etapas de validação e otimização.
+    Uma checagem de tipos estáticos, por exemplo, é comum em compiladores, e identifica diversos erros de programação
+    antes do executável ser gerado.
+    Por sua vez, enquanto uma linguagem compilada precisa fazer essa tradução para cada plataforma destinada (Windows, linux, etc...)
+    a interpretação, por poder rodar em tempo de execução, é independente.
+    
     """
 
     COMP_VS_INTERP_Q2 = """
     
-    Minha resposta aqui! 
+    Nuitka é um compilador de fonte para fonte que compila
+    o código Python para o código C, aplicando algumas otimizações
+    em tempo de compilação no processo, como dobramento e propagação constantes,
+    previsão de chamada integrada, inferência de tipo e execução de instrução condicional.
+
+    https://pypi.org/project/Nuitka/0.4.1/ 
 
     """
 '''
